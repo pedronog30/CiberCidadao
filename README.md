@@ -42,3 +42,6 @@ Gustavo Rodrigues Sanchez de Oliveira - RM
 ## Vídeo pitch
 
 (link do vídeo)
+
+## lINK DO DEPLOY
+https://ciber-cidadao.vercel.app/index.html
