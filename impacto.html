@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impacto — CiberCidadão</title>
+  <meta name="description" content="Quem ganha com o CiberCidadão, quem participa da solução e como o impacto será medido e ampliado.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Escudo do CiberCidadão" width="32" height="32">
+        <span>Ciber<span class="destaque">Cidadão</span></span>
+      </a>
+      <span class="slogan">Segurança digital para todos</span>
+
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="area-menu" aria-label="Abrir menu">
+        <span class="icone-menu" aria-hidden="true"></span>
+      </button>
+
+      <div class="area-menu" id="area-menu">
+        <nav aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="analisar.html">Analisar</a></li>
+            <li><a href="impacto.html" aria-current="page">Impacto</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+          </ul>
+        </nav>
+        <div class="acessibilidade" role="group" aria-label="Opções de acessibilidade">
+          <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A−</button>
+          <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+          <button type="button" id="botao-contraste" aria-pressed="false" aria-label="Alto contraste">◐</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero-pagina" aria-labelledby="titulo-impacto">
+      <div class="container">
+        <p class="etiqueta">// impacto</p>
+        <h1 id="titulo-impacto" class="titulo-principal">Quem ganha com o <span class="destaque">CiberCidadão</span></h1>
+        <p class="texto-grande">
+          Cada golpe evitado é dinheiro que fica com a família, um idoso que continua usando o banco digital
+          e um cidadão que aprende a se proteger sozinho.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quem ganha -->
+    <section class="secao secao-escura" aria-labelledby="titulo-beneficios">
+      <div class="container">
+        <p class="etiqueta">/ benefícios</p>
+        <h2 id="titulo-beneficios" class="titulo-secao">Benefício para cada parte da sociedade</h2>
+
+        <div class="grade">
+          <article class="cartao">
+            <h3>O cidadão</h3>
+            <p>Descobre em segundos se uma mensagem, número, e-mail ou link é suspeito, e sabe exatamente o que fazer.</p>
+          </article>
+          <article class="cartao">
+            <h3>A família</h3>
+            <p>Filhos e netos podem indicar a ferramenta aos mais velhos. Menos dinheiro perdido e menos medo de usar o celular.</p>
+          </article>
+          <article class="cartao">
+            <h3>Bancos e empresas</h3>
+            <p>Menos fraudes, menos contestações e clientes mais confiantes nos canais digitais oficiais.</p>
+          </article>
+          <article class="cartao">
+            <h3>Poder público</h3>
+            <p>Estatísticas anônimas das verificações mostram quais golpes crescem e em quais canais, para orientar campanhas de prevenção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecossistema -->
+    <section class="secao" aria-labelledby="titulo-ecossistema">
+      <div class="container">
+        <p class="etiqueta">/ ecossistema</p>
+        <h2 id="titulo-ecossistema" class="titulo-secao">Quem participa da solução</h2>
+        <p class="introducao">Nenhum golpe é combatido sozinho. O CiberCidadão conecta quem recebe a mensagem, quem tem os dados para verificá-la e quem pode agir.</p>
+
+        <ul class="grade">
+          <li class="cartao cartao-destaque">
+            <h3>Cidadãos</h3>
+            <p>Verificam mensagens, números, e-mails e links antes de agir.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <h3>Operadoras (Claro, TIM, Vivo)</h3>
+            <p>Fornecem tempo de linha e troca de chip pelas APIs do Open Gateway.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <h3>DNS, registros de domínio e Google Safe Browsing</h3>
+            <p>Informam SPF, DMARC, a data de registro dos domínios e se um site é malicioso.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <h3>Polícia Civil</h3>
+            <p>O CiberCidadão orienta a vítima a registrar o boletim de ocorrência na delegacia de crimes cibernéticos.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <h3>Escolas, CRAS e centros de convivência</h3>
+            <p>Usam a ferramenta em oficinas de educação digital para jovens e idosos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Como medir -->
+    <section class="secao secao-escura" aria-labelledby="titulo-medicao">
+      <div class="container">
+        <p class="etiqueta">/ medição</p>
+        <h2 id="titulo-medicao" class="titulo-secao">Como o impacto será medido</h2>
+        <p class="introducao">Indicadores que a plataforma vai acompanhar desde o primeiro dia, com as metas para o primeiro ano.</p>
+
+        <ul class="grade">
+          <li class="cartao cartao-destaque">
+            <strong class="numero">100 mil</strong>
+            <p>verificações realizadas no primeiro ano (meta).</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <strong class="numero">70%</strong>
+            <p>dos usuários que receberam "alto risco" dizendo que não seguiram a mensagem (meta, medida por pesquisa após a verificação).</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <strong class="numero">30 mil</strong>
+            <p>verificações com "alto risco", ou seja, golpes identificados antes de a pessoa agir (meta).</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <strong class="numero">20</strong>
+            <p>oficinas de educação digital em escolas e CRAS de Belo Horizonte (meta).</p>
+          </li>
+        </ul>
+        <p class="fonte">Metas propostas pela equipe para o primeiro ano de operação.</p>
+      </div>
+    </section>
+
+    <!-- Evolução -->
+    <section class="secao" aria-labelledby="titulo-evolucao">
+      <div class="container">
+        <p class="etiqueta">/ como o impacto será ampliado</p>
+        <h2 id="titulo-evolucao" class="titulo-secao">Do protótipo ao serviço real</h2>
+
+        <ol class="grade">
+          <li class="cartao cartao-destaque">
+            <p class="etiqueta">Fase 1 · agora</p>
+            <h3>Protótipo</h3>
+            <p>Simulação da verificação de WhatsApp, e-mail, links e SMS com respostas simuladas das APIs.</p>
+          </li>
+          <li class="cartao">
+            <p class="etiqueta">Fase 2</p>
+            <h3>Integração com APIs</h3>
+            <p>As respostas simuladas dão lugar a APIs reais: Tenure e SIM Swap das operadoras, DNS (SPF, DMARC), registro de domínios e Google Safe Browsing.</p>
+          </li>
+          <li class="cartao">
+            <p class="etiqueta">Fase 3</p>
+            <h3>Bot no WhatsApp</h3>
+            <p>O cidadão encaminha a mensagem suspeita para o CiberCidadão e recebe a resposta ali mesmo, sem abrir site.</p>
+          </li>
+          <li class="cartao">
+            <p class="etiqueta">Fase 4</p>
+            <h3>Parcerias</h3>
+            <p>Parcerias com bancos e operadoras para avisar o cidadão em tempo real quando um golpe estiver em andamento.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ODS -->
+    <section class="secao secao-escura" aria-labelledby="titulo-ods">
+      <div class="container">
+        <p class="etiqueta">/ agenda 2030 da onu</p>
+        <h2 id="titulo-ods" class="titulo-secao">Contribuição para os ODS</h2>
+        <div class="grade">
+          <article class="cartao ods">
+            <span class="ods-numero ods-4">4</span>
+            <div>
+              <h3>Educação de qualidade</h3>
+              <p>Cada verificação explica o porquê de cada sinal. O usuário aprende a reconhecer o golpe sozinho da próxima vez.</p>
+            </div>
+          </article>
+          <article class="cartao ods">
+            <span class="ods-numero ods-9">9</span>
+            <div>
+              <h3>Indústria, inovação e infraestrutura</h3>
+              <p>Leva ao cidadão comum técnicas de detecção usadas por equipes de segurança de empresas, de forma gratuita.</p>
+            </div>
+          </article>
+          <article class="cartao ods">
+            <span class="ods-numero ods-10">10</span>
+            <div>
+              <h3>Redução das desigualdades</h3>
+              <p>Protege quem tem menos familiaridade digital, como idosos, para que o medo de golpe não os afaste dos serviços digitais.</p>
+            </div>
+          </article>
+        </div>
+
+        <a href="analisar.html" class="botao botao-principal botao-grande">Fazer uma verificação</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p class="logo-rodape">Ciber<span class="destaque">Cidadão</span></p>
+      <p>Global Solution 2026/2 · CitizenTech · FIAP</p>
+      <p class="aviso-rodape">Ferramenta educativa. Em caso de golpe, ligue para o seu banco e registre um boletim de ocorrência.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

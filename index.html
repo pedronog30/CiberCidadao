@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CiberCidadão — Segurança digital para todos</title>
+  <meta name="description" content="CiberCidadão: entenda o problema dos golpes digitais no Brasil e verifique se uma mensagem é golpe.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Escudo do CiberCidadão" width="32" height="32">
+        <span>Ciber<span class="destaque">Cidadão</span></span>
+      </a>
+      <span class="slogan">Segurança digital para todos</span>
+
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="area-menu" aria-label="Abrir menu">
+        <span class="icone-menu" aria-hidden="true"></span>
+      </button>
+
+      <div class="area-menu" id="area-menu">
+        <nav aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html" aria-current="page">Início</a></li>
+            <li><a href="analisar.html">Analisar</a></li>
+            <li><a href="impacto.html">Impacto</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+          </ul>
+        </nav>
+        <div class="acessibilidade" role="group" aria-label="Opções de acessibilidade">
+          <button type="button" id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A−</button>
+          <button type="button" id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+          <button type="button" id="botao-contraste" aria-pressed="false" aria-label="Alto contraste">◐</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Topo: apresentação do problema -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-conteudo">
+        <div>
+          <p class="etiqueta">// alerta: o crime mudou de endereço</p>
+          <h1 id="titulo-hero" class="titulo-principal">O golpe agora chega pelo <span class="destaque">seu celular</span></h1>
+          <p class="texto-grande">
+            O roubo na rua está caindo. O golpe pelo WhatsApp, SMS e e-mail não para de crescer.
+            O CiberCidadão ajuda qualquer pessoa a desconfiar <strong>antes</strong> de clicar, pagar ou passar seus dados.
+          </p>
+          <div class="grupo-botoes">
+            <a href="analisar.html" class="botao botao-principal">Analisar uma mensagem</a>
+            <a href="#problema" class="botao botao-secundario">Entender o problema</a>
+          </div>
+        </div>
+
+        <figure class="mensagem-exemplo">
+          <div class="mensagem-topo">
+            <span class="avatar" aria-hidden="true">?</span>
+            <div>
+              <p class="contato">SMS · 29151</p>
+              <p class="status-contato">remetente desconhecido</p>
+            </div>
+          </div>
+          <blockquote class="balao">
+            <p>BRADESCO: Identificamos uma <mark>compra suspeita</mark>. Seu acesso será <mark>bloqueado</mark> em <mark>24h</mark>. <mark>Atualize seus dados</mark>: <mark>bradesco-seguranca.xyz</mark></p>
+          </blockquote>
+          <figcaption>
+            <span class="selo selo-alto">99% de chance de golpe</span>
+            Exemplo de SMS de golpe verificado pelo CiberCidadão: urgência, ameaça de bloqueio, pedido de dados e link para um site falso.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- O problema em números -->
+    <section id="problema" class="secao" aria-labelledby="titulo-problema">
+      <div class="container">
+        <p class="etiqueta">/ o problema</p>
+        <h2 id="titulo-problema" class="titulo-secao">Os números de um crime que acontece em silêncio</h2>
+
+        <ul class="grade">
+          <li class="cartao cartao-destaque">
+            <strong class="numero">2,26 mi</strong>
+            <p>casos de estelionato registrados no Brasil em 2025, um aumento de cerca de 144% desde 2020.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <strong class="numero">4 / min</strong>
+            <p>golpes registrados a cada minuto no país, em média 258 por hora.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <strong class="numero">97%</strong>
+            <p>dos estelionatos registrados nunca chegam ao Poder Judiciário. O golpista quase nunca é punido.</p>
+          </li>
+          <li class="cartao cartao-destaque">
+            <strong class="numero">83,2%</strong>
+            <p>dos brasileiros dizem ter medo de sofrer uma fraude pela internet ou pelo celular.</p>
+          </li>
+        </ul>
+
+        <p class="fonte">
+          Fonte: Fórum Brasileiro de Segurança Pública, <cite>20º Anuário Brasileiro de Segurança Pública</cite> (2026).
+          <a href="https://forumseguranca.org.br/" target="_blank" rel="noopener noreferrer">forumseguranca.org.br<span class="leitor-tela"> (abre em nova aba)</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Quem é o cidadão -->
+    <section class="secao secao-escura" aria-labelledby="titulo-cidadao">
+      <div class="container">
+        <p class="etiqueta">/ quem protegemos</p>
+        <h2 id="titulo-cidadao" class="titulo-secao">O cidadão que recebe a mensagem</h2>
+        <p class="introducao">Qualquer pessoa com um celular é alvo. Mas alguns grupos sofrem mais, por motivos diferentes.</p>
+
+        <div class="grade">
+          <article class="cartao">
+            <h3>Idosos e aposentados</h3>
+            <p>Usam menos a internet, mas perdem mais quando caem. Muitos desistem do banco digital e de serviços públicos por medo de golpe.</p>
+          </article>
+          <article class="cartao">
+            <h3>Jovens de 16 a 29 anos</h3>
+            <p>São os mais atingidos em volume, segundo o Instituto DataSenado. Familiaridade com tecnologia não é proteção: lojas falsas e vagas falsas miram nesse público.</p>
+          </article>
+          <article class="cartao">
+            <h3>Trabalhadores e pequenos comerciantes</h3>
+            <p>Recebem cobranças, boletos e "centrais do banco" o dia todo. Na correria, um Pix errado vira prejuízo para a família ou o negócio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que o golpe funciona -->
+    <section class="secao" aria-labelledby="titulo-gatilhos">
+      <div class="container">
+        <p class="etiqueta">/ por que funciona</p>
+        <h2 id="titulo-gatilhos" class="titulo-secao">O golpe não depende de tecnologia. Depende de emoção.</h2>
+
+        <ol class="grade">
+          <li class="cartao">
+            <span class="circulo-numero" aria-hidden="true">1</span>
+            <h3>Urgência</h3>
+            <p>"Sua conta será bloqueada hoje." Com pressa, a pessoa age antes de pensar.</p>
+          </li>
+          <li class="cartao">
+            <span class="circulo-numero" aria-hidden="true">2</span>
+            <h3>Autoridade</h3>
+            <p>Banco, INSS, Correios, Receita: o golpista se passa por quem a gente costuma obedecer.</p>
+          </li>
+          <li class="cartao">
+            <span class="circulo-numero" aria-hidden="true">3</span>
+            <h3>Afeto e ganância</h3>
+            <p>Um filho pedindo ajuda ou um prêmio inesperado: o coração fala mais alto que a desconfiança.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- A solução -->
+    <section class="secao secao-escura" aria-labelledby="titulo-solucao">
+      <div class="container">
+        <p class="etiqueta">/ a proposta</p>
+        <h2 id="titulo-solucao" class="titulo-secao">CiberCidadão: uma segunda opinião antes de agir</h2>
+        <p class="introducao">
+          Recebeu algo estranho? Consulte no CiberCidadão. Em segundos você vê a chance de ser golpe,
+          o que foi encontrado e <strong>o que fazer agora</strong>, em linguagem simples.
+        </p>
+
+        <ol class="grade">
+          <li class="cartao">
+            <span class="circulo-numero" aria-hidden="true">1</span>
+            <h3>Escolha o que verificar</h3>
+            <p>Um número de WhatsApp, um e-mail, um link ou uma mensagem SMS.</p>
+          </li>
+          <li class="cartao">
+            <span class="circulo-numero" aria-hidden="true">2</span>
+            <h3>Consultamos APIs confiáveis</h3>
+            <p>Cruzamos os dados com bases de verificação reconhecidas: registro de domínios, autenticação de e-mail (SPF, DKIM e DMARC), consulta de números nas operadoras e listas de sites maliciosos. No SMS, analisamos os padrões da mensagem.</p>
+          </li>
+          <li class="cartao">
+            <span class="circulo-numero" aria-hidden="true">3</span>
+            <h3>Você decide com segurança</h3>
+            <p>Porcentagem de risco, o que foi encontrado e orientações práticas.</p>
+          </li>
+        </ol>
+
+        <p class="aviso">
+          <strong>Nosso compromisso:</strong> nunca dizemos que algo é 100% seguro. Na dúvida, confirme por outro canal,
+          como ligar para o número oficial do banco ou falar pessoalmente com o familiar.
+        </p>
+
+        <a href="analisar.html" class="botao botao-principal botao-grande">Analisar uma mensagem agora</a>
+      </div>
+    </section>
+
+    <!-- ODS -->
+    <section class="secao" aria-labelledby="titulo-ods">
+      <div class="container">
+        <p class="etiqueta">/ agenda 2030 da onu</p>
+        <h2 id="titulo-ods" class="titulo-secao">Objetivos de Desenvolvimento Sustentável</h2>
+        <div class="grade">
+          <article class="cartao ods">
+            <span class="ods-numero ods-4">4</span>
+            <div>
+              <h3>Educação de qualidade</h3>
+              <p>Cada verificação explica o porquê de cada sinal. O usuário aprende a reconhecer o golpe sozinho da próxima vez.</p>
+            </div>
+          </article>
+          <article class="cartao ods">
+            <span class="ods-numero ods-9">9</span>
+            <div>
+              <h3>Indústria, inovação e infraestrutura</h3>
+              <p>Leva ao cidadão comum técnicas de detecção usadas por equipes de segurança de empresas, de forma gratuita.</p>
+            </div>
+          </article>
+          <article class="cartao ods">
+            <span class="ods-numero ods-10">10</span>
+            <div>
+              <h3>Redução das desigualdades</h3>
+              <p>Protege quem tem menos familiaridade digital, como idosos, para que o medo de golpe não os afaste dos serviços digitais.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p class="logo-rodape">Ciber<span class="destaque">Cidadão</span></p>
+      <p>Global Solution 2026/2 · CitizenTech · FIAP</p>
+      <p class="aviso-rodape">Ferramenta educativa. Em caso de golpe, ligue para o seu banco e registre um boletim de ocorrência.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
