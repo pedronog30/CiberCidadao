@@ -40,5 +40,7 @@ Pedro Manoel Fernandes Nogueira - RM
 Gustavo Rodrigues Sanchez de Oliveira - RM
 
 ## Vídeo pitch
+(https://youtu.be/zhs_IEldlQg?is=x-PePsWpqb8F94fN)
 
-(link do vídeo)
+## lINK DO DEPLOY
+https://ciber-cidadao.vercel.app/index.html
